@@ -14,5 +14,14 @@ describe ('Sum', function() {
       expect(sum()).to.equal(0);
       assert.equal(sum(),0);
     });
-    
+
+    it ('Should only be passed integers', function() {
+      expect(sum().isNumber);
+      assert.isNumber(sum());
+    });
+
+    it ('Should not be passed negative numbers', function() {
+      expect(sum().isAtLeast(sum(), 0, 'must be positive numbers'));
+    });
+
 });
