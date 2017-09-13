@@ -1,7 +1,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 const vowels = require('../vowels');
-const { countVowels } = vowels
+const countVowels = vowels
 
 describe('vowels', function(){
   it('returns 0 if there are no vowels in the given string', function(){
